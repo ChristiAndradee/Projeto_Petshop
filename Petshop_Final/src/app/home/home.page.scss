@@ -1,0 +1,119 @@
+.espaco{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.caixa{
+height: 60%;
+overflow:unset;
+}
+
+.texto1{
+  text-align: center; 
+}
+
+.card{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+
+ion-content{
+
+  --background: url("../../assets/Fundo2.jpg") 65%;
+
+}
+
+.cadastrar {
+  --color: #f2ff00;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.cadastrar::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.cadastrar:hover {
+  color: blue;
+}
+
+.cadastrar:before {
+  top: 100%;
+  left: 100%;
+  transition: .3s all;
+}
+
+.cadastrar:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.btn {
+  width: 150px;
+  height: 25px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #03077e;
+  color: #f5f5f5;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
+}

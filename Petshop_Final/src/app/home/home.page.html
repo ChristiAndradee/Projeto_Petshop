@@ -1,0 +1,70 @@
+<ion-content class="fundo" [fullscreen]="true">
+
+  <button class="btn" style="margin-left: auto; " (click)="lista()">
+    <span class="icon">
+        <svg viewBox="0 0 175 80" width="40" height="40">
+            <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+        </svg>
+    </span>
+    <span class="text">LISTA</span>
+</button>
+
+
+<ion-card class="card">
+
+  <img class="imagem" src="../../assets/Entrada.jpg" />
+  <ion-card-header>
+  </ion-card-header>
+  <ion-card-content >
+
+    <ion-chip class="nome">
+      <ion-label>Van Dogh</ion-label>
+    </ion-chip>
+
+    <ion-list > 
+
+      <ion-text class="texto1" color="light">
+        <h3>Cadastre seu doguinho</h3>
+      </ion-text>
+
+      <ion-item>
+        <ion-thumbnail slot="line">
+        </ion-thumbnail>
+        <ion-label>Nome:<span style="color: red">*</span></ion-label>
+        <ion-input
+        type="text"
+        expand="block"
+        style="color: #fff"
+        maxlenght="8"
+        [(ngModel)]="cachorro.nome"
+      ></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-thumbnail slot="line">
+        </ion-thumbnail>
+        <ion-label>Idade:<span style="color: red">*</span></ion-label>
+        <ion-input
+        type="text"
+        expand="block"
+        style="color: #fff"
+        maxlenght="8"
+        [(ngModel)]="cachorro.idade"
+      ></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+
+  <ion-footer>
+    <ion-row>
+      <ion-col class="espaco">
+        <button class="cadastrar" shape="block" color="warning" (click)="cadastrar()"> Cadastrar
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-card>
+
+</ion-content>

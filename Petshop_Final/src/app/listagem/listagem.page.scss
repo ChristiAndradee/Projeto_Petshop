@@ -1,0 +1,114 @@
+  ion-content{
+
+    --background: url("../../assets/Fundo2.jpg")  35%;
+  
+  }
+
+  .excluir {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+    margin-top: -3.5rem;
+    margin-left: 11.5rem;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .excluir:hover {
+    width: 60px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  
+  .excluir:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+  }
+  
+  .excluir::before {
+    position: absolute;
+    top: -20px;
+    content: "Excluir";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+  
+  .excluir:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+  }
+
+  .retorno {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #021E73;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #2838b1;
+   }
+   
+   .retorno > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .retorno:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .retorno:hover {
+    box-shadow: 9px 9px 33px #ddd208, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+
+.cachorro{
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  margin-left: 4rem;
+}
+
+
+.chip{
+  width:fit-content;
+}
+
+.idade{
+  margin-left: 10px;
+}
+
+  
